@@ -1,6 +1,6 @@
 # FestPass Jenkins Challenge: Submission
 
-**Student (Git author alias):** ARYAN KAPOOR
+**Student (Git author alias):** NACHIKET CHAUDHARY
 **Class code:** 001 · **Challenge code:** 00138
 
 ## Where everything is

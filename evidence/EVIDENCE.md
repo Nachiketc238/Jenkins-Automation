@@ -1,19 +1,19 @@
 # FestPass Jenkins Challenge: Evidence
 
-**Student (Git author alias):** ARYAN KAPOOR
-**Class code:** 001  **Challenge code:** 00138
+**Student (Git author alias):** NACHIKET CHAUDHARY
+**Class code:** 001 **Challenge code:** 00138
 **Date:** 30 October 2026
 **Jenkins:** 2.580.1 LTS on JDK 21.0.13 (Temurin)
 
 ## 1. Job configuration
 
-| Setting | Value |
-|---|---|
-| Job name / type | `festpass-ci`, Pipeline |
-| Definition | Pipeline script from SCM, Git |
-| Repository URL | `git://127.0.0.1:9418/festpass-java` (no credentials) |
-| Branch / script path | `*/main` / `Jenkinsfile` |
-| Agent | `student-laptop` (permanent agent, 1 executor, WebSocket); built-in node has 0 executors |
+| Setting              | Value                                                                                    |
+| -------------------- | ---------------------------------------------------------------------------------------- |
+| Job name / type      | `festpass-ci`, Pipeline                                                                  |
+| Definition           | Pipeline script from SCM, Git                                                            |
+| Repository URL       | `git://127.0.0.1:9418/festpass-java` (no credentials)                                    |
+| Branch / script path | `*/main` / `Jenkinsfile`                                                                 |
+| Agent                | `student-laptop` (permanent agent, 1 executor, WebSocket); built-in node has 0 executors |
 
 ## 2. Committed polling trigger
 
@@ -29,11 +29,11 @@ It was committed together with `submission.properties` in `438f394`. No UI trigg
 
 ## 3. Build trail
 
-| Build | Cause | Commit | Result | Tests | JAR |
-|---|---|---|---|---|---|
-| #1 | Started by user (Build Now, bootstrap only) | `438f394` Configure my Jenkins assignment | FAILURE | 28 run, 3 failed | NOT_PUBLISHED |
-| #2 | **Started by an SCM change** | `46f32d6` Personalize my help introduction | FAILURE | 28 run, 3 failed | NOT_PUBLISHED |
-| #3 | **Started by an SCM change** | `a0ba479` Fix cancel so it removes the booking and frees the seat | **SUCCESS** | **28 run, 0 failed** | Published |
+| Build | Cause                                       | Commit                                                            | Result      | Tests                | JAR           |
+| ----- | ------------------------------------------- | ----------------------------------------------------------------- | ----------- | -------------------- | ------------- |
+| #1    | Started by user (Build Now, bootstrap only) | `438f394` Configure my Jenkins assignment                         | FAILURE     | 28 run, 3 failed     | NOT_PUBLISHED |
+| #2    | **Started by an SCM change**                | `46f32d6` Personalize my help introduction                        | FAILURE     | 28 run, 3 failed     | NOT_PUBLISHED |
+| #3    | **Started by an SCM change**                | `a0ba479` Fix cancel so it removes the booking and frees the seat | **SUCCESS** | **28 run, 0 failed** | Published     |
 
 In each case, the commit printed in the Jenkins console matched `git log -1 --oneline` in my repository.
 
@@ -86,7 +86,7 @@ From the download folder of build #3:
 
 ```
 > java -jar festpass.jar help
-FestPass - campus event registration, configured by ARYAN KAPOOR
+FestPass - campus event registration, configured by NACHIKET CHAUDHARY
 Usage: java -jar build/festpass.jar [--data FILE] COMMAND
   add-event ID "TITLE" CAPACITY
   list
