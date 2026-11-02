@@ -1,4 +1,5 @@
-pipeline {
+pipeline
+{
     agent { label 'student-laptop' }
     options {
         skipDefaultCheckout(true)

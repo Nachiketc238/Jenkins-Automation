@@ -2,13 +2,14 @@
 
 ## Your mission
 
-The supplied app compiles but contains a bug. Its tests are intentionally
+The supplied app  compiles but contains a bug. Its tests are intentionally
 failing. Use Jenkins to discover what is wrong, fix the application, and prove
 that your next Git commit produces a green pipeline.
 Do not add features, write new tests, or change the 28 supplied tests.
 The starter also has no SCM trigger: configuring that is your task.
 
 **Time budget: 60 minutes after environment preparation.**
+
 JDK/Git, Jenkins/plugins, the `student-laptop` agent, and the local Git server
 must be ready before starting the clock. A green app build is NOT a prerequisite.
 Ask the instructor for help if setup fails before the Test stage.

@@ -16,7 +16,7 @@ import javax.xml.XMLConstants;
 import javax.xml.parsers.DocumentBuilderFactory;
 
 public final class BuildEvidence {
-    private BuildEvidence() {}
+    private BuildEvidence() { }
 
     public static void main(String[] args) throws Exception {
         if (args.length != 1 || !List.of("prepare", "SUCCESS", "FAILURE", "UNSTABLE",
